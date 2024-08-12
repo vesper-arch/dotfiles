@@ -1,0 +1,10 @@
+# Git
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+
+\Scripts
+\Wallpapers
