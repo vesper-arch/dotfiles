@@ -6,10 +6,8 @@
 
 window#waybar {
     background-color: rgba(255, 255, 255, 0.125);
-    color: #ffffff;
-    margin: 10px 10px 10px 10px;
-    padding: 4px 1px;
-    border-radius: 12px;
+    background: transparent;
+    margin: 6px 6px 6px 6px;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -19,11 +17,10 @@ window#waybar.hidden {
 }
 
 #custom-notification {
-    margin: 5px 5px 5px 5px;
-    min-width: 20px;
-    border-radius: 18px;
+    min-width: 23px;
+    border-radius: 10px;
     padding: 0 3px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #00574E;
 }
 
 /*
@@ -83,7 +80,7 @@ button:hover {
 
 #window,
 #workspaces {
-    background: #FFFFFF;
+    background: #082A40;
     margin: 5px 5px 5px 5px;
     padding: 7px 6px;
     border-radius: 16px;
@@ -95,13 +92,12 @@ button:hover {
     padding: 0 5px;
     border-radius: 12px;
     margin: 0 3px;
-    background-color: #7DC4BD;
-    opacity: 0.4;
+    background-color: #187A85;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: #00574E;
+    background-color: #1FB8B0;
     border-radius: 10px;
     min-width: 30px;
 }
@@ -121,10 +117,8 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
-    border-radius: 18px;
-    border: 3px solid #FFFFFF;
-    opacity: 0.8;
+    background-color: #00574E;
+    border-radius: 10px;
 }
 
 #cava {
@@ -143,27 +137,24 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    border-radius: 18px;
-    border: 3px solid #b6f7f0;
-    color: #000000;
+    background-color: #00574E;
+    border-radius: 10px;
+    color: #FFFFFF;
 }
 
 #memory {
-    background-color: #9b59b6;
-    border-radius: 18px;
-    border: 3px solid #b6f7f0;
+    background-color: #00574E;
+    border-radius: 10px;
 }
 
 #network {
-    background-color: #2980b9;
-    border-radius: 18px;
-    border: 3px solid #b6f7f0;
+    background-color: #00574E;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 
 #network:hover {
-    background-color: #6F6FAA;
+    background-color: #008A55;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -173,15 +164,13 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    border-radius: 18px;
-    color: #000000;
-    border: 3px solid #b6f7f0;
+    background-color: #00574E;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #008A55;
 }
 
 #pulseaudio.muted {
@@ -213,9 +202,8 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
-    border-radius: 18px;
-    border: 3px solid #b6f7f0;
+    background-color: #00574E;
+    border-radius: 10px;
 }
 
 #temperature.critical {
@@ -223,15 +211,14 @@ label:focus {
 }
 
 #tray {
-    background-color: rgba(150, 228, 224, 0.4);
-    border-radius: 18px;
+    background-color: #00574E;
+    border-radius: 10px;
 }
 
 #custom-power {
-    background: transparent;
+    background-color: #00574E;
     color: #FFFFFF;
-    border-radius: 18px;
-    border: 3px solid #b6f7f0;
+    border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 

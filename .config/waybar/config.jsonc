@@ -5,7 +5,7 @@
     "margin-top": 14,
     "width": 2500, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
-    "height": 40,
+    "height": 36,
     // Choose the order of the modules
     "modules-left": [
         "tray",
@@ -91,9 +91,6 @@
         "format": "{usage}% ",
         "tooltip": false
     },
-    "custom/notifications": {
-        "format": ""
-    },  
     "custom/notification": {
         "tooltip": false,
         "format": "{icon}",
@@ -178,3 +175,4 @@
 		}
     }
 }
+
