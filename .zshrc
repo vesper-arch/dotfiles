@@ -30,7 +30,6 @@ zinit cdreplay -q
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 eval "$(zoxide init zsh --cmd cd)"
 eval "$(fzf --zsh)"
-eval "$(tmuxifier init -)"
 
 # Keybindings
 bindkey -e
@@ -63,5 +62,3 @@ alias vi='nvim'
 alias c='clear'
 alias fastfetch='fastfetch --config arch'
 
-# PATH
-export PATH="$HOME/.tmuxifier/bin:$PATH"
