@@ -60,5 +60,5 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vi='nvim'
 alias c='clear'
-alias fastfetch='fastfetch --config arch'
+alias neofetch='fastfetch --config arch'
 
