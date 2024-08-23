@@ -19,6 +19,7 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "cava",
         "network",
         "custom/power",
         "clock",
