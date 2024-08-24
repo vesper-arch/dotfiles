@@ -8,4 +8,3 @@ if pgrep -l waybar; then
 fi
 
 waybar &
-waybar --config ~/.config/waybar/config-taskbar.jsonc

@@ -227,8 +227,25 @@ foreground = '#33ffff'
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
-gradient_color_1 = '#40C9FF'
-gradient_color_2 = '#E81CFF'
+# ---90s Apple Logo Colors---
+gradient_color_1 = '#61bb46'
+gradient_color_2 = '#fdb827'
+gradient_color_3 = '#f5821f'
+gradient_color_4 = '#e03a3e'
+gradient_color_5 = '#8a2be2'
+gradient_color_6 = '#009ddc'
+gradient_color_7 = '#61bb46'
+gradient_color_8 = '#fdb827'
+
+# ---Basic Gradient---
+# gradient_color_1 = '#40c9ff'
+# gradient_color_2 = '#6badfb'
+# gradient_color_3 = '#9691f7'
+# gradient_color_4 = '#bc75f3'
+# gradient_color_5 = '#dd59ef'
+# gradient_color_6 = '#e81cff'
+# gradient_color_7 = '#e81cff'
+# gradient_color_8 = '#e81cff'
 
 
 
