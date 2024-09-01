@@ -2,14 +2,15 @@
 
 DaySuffix() {
   case `date +%d` in
-    1|21|31) echo "st";;
-    2|22)    echo "nd";;
-    3|23)    echo "rd";;
+    01|21|31) echo "st";;
+    02|22)    echo "nd";;
+    03|23)    echo "rd";;
     *)       echo "th";;
   esac
 }
 
 while true
     do
-        echo `date +"%B %d$(DaySuffix)"`
+        DAY=$(echo $(date +"%d") | sed 's/^0*//')
+        echo `date +"%B $DAY$(DaySuffix)"`
     done

@@ -5,6 +5,7 @@
 @define-color workspaces #187A85;
 @define-color textcolor1 #FFFFFF;
 @define-color textcolor2 #034e52;
+@define-color textcolor3 #000000;
 
 
 * {
@@ -34,7 +35,7 @@ window#waybar.hidden {
     padding: 0 10px;
     margin: 2px 2px 2px 2px;
     background-color: @backgroundcolor3;
-    color: @textcolor2;
+    color: @textcolor3;
     border: 2px solid rgba(255, 255, 255, 0.5)
 }
 
@@ -126,7 +127,8 @@ button:hover {
     border-radius: 18px;
     margin: 2px;
     padding: 0 8px;
-    border: 2px solid rgba(255, 255, 255, 0.5)
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: @textcolor3;
 }
 
 #cava {
