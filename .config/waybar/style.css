@@ -1,15 +1,29 @@
+@define-color backgroundcolor1 #00574E;
+@define-color backgroundcolor2 #1c4661;
+@define-color backgroundcolor3 rgba(255, 255, 255, 0.225);
+@define-color workspacesactive #1FB8B0;
+@define-color workspaces #187A85;
+@define-color textcolor1 #FFFFFF;
+@define-color textcolor2 #492e5d;
+
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "JetBrainsMono Extrabold", FontAwesome, Roboto, sans-serif;
-    font-size: 13px;
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, sans-serif;
+    border: none;
+    min-height: 0px;
+    
 }
 
 window#waybar {
     background-color: rgba(255, 255, 255, 0.125);
     background: transparent;
-    margin: 6px 6px 6px 6px;
     transition-property: background-color;
     transition-duration: .5s;
+}
+
+label.module {
+    border-radius: 22px;
 }
 
 window#waybar.hidden {
@@ -17,12 +31,13 @@ window#waybar.hidden {
 }
 
 #custom-notification {
-    min-width: 23px;
-    border-radius: 10px;
-    padding: 0 3px;
-    background-color: #00574E;
-    color: #FFFFFF;
+    padding: 0 10px;
+    margin: 2px 2px 2px 2px;
+    background-color: @backgroundcolor3;
+    color: @textcolor2;
+    border: 2px solid rgba(255, 255, 255, 0.5)
 }
+
 
 /*
 window#waybar.empty {
@@ -64,14 +79,8 @@ button:hover {
 }
 
 #clock,
-#cpu,
-#memory,
-#disk,
-#temperature,
 #network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
 #tray,
 #mode,
 #mpd {
@@ -79,32 +88,76 @@ button:hover {
     color: #ffffff;
 }
 
-#window,
 #workspaces {
-    background: #082A40;
-    margin: 5px 5px 5px 5px;
-    padding: 7px 6px;
-    border-radius: 16px;
-    margin: 0 4px;
-    opacity: 0.8;
+    background: @backgroundcolor2;
+    margin: 2px 1px 3px 1px;
+    padding: 6px 6px;
+    border-radius: 20px 6px 6px 20px;
 }
 
 #workspaces button {
     padding: 0 5px;
-    border-radius: 12px;
     margin: 0 3px;
-    background-color: #187A85;
+    border-radius: 20px;
+    background-color: @workspaces;
+    color: @textcolor1;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    background-color: #1FB8B0;
-    border-radius: 10px;
+    background-color: @workspacesactive;
     min-width: 30px;
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+}
+
+#window {
+    background-color: @backgroundcolor2;
+    padding: 0 14px;
+    color: @textcolor1;
+    margin: 2px 1px 3px 1px;
+    border-radius: 6px 22px 22px 6px;
+}
+
+#custom-pacman {
+    background-color: @backgroundcolor3;
+    border-radius: 18px;
+    margin: 2px;
+    padding: 0 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5)
+}
+
+#cava {
+    background-color: @backgroundcolor3;
+    margin: 2px 1px 2px 2px;
+    border-radius: 18px 2px 2px 18px;
+    color: @textcolor2;
+    padding: 0 8px;
+}
+
+#custom-music_info {
+    background-color: @backgroundcolor3;
+    margin: 2px 1px 2px 1px;
+    border-radius: 2px;
+    padding: 0 8px;
+    color: @textcolor2;
+    border: none;
+}
+
+#pulseaudio {
+    background-color: @backgroundcolor3;
+    margin: 2px 2px 2px 1px;
+    border-radius: 2px 18px 18px 2px;
+    color: @textcolor2;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#pulseaudio.muted {
+    background: transparent;
+    border: 2px solid #1d9b8e;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -118,15 +171,29 @@ button:hover {
 }
 
 #clock {
-    background-color: #00574E;
-    border-radius: 10px;
+    background-color: @backgroundcolor3;
+    border-radius: 2px 18px 18px 2px;
+    border: 3px solid @backgroundcolor3;
+    border-style: none solid none none;
+    margin: 2px 2px 2px 1px;
 }
 
-#cava {
-    background-color: #00574E;
-    color: #FFFFFF;
-    padding: 8px 8px;
-    border-radius: 10px;
+#custom-date {
+    background-color: @backgroundcolor3;
+    color: @textcolor1;
+    padding: 0 9px;
+    border: 3px solid @backgroundcolor3;
+    border-style: none none none solid;
+    border-radius: 18px 2px 2px 18px;
+    margin: 2px 1px 2px 2px;
+}
+
+#custom-weekday {
+    background-color: @backgroundcolor3;
+    color: @textcolor1;
+    padding: 0 9px;
+    border-radius: 2px;
+    margin: 2px 1px 2px 1px;
 }
 
 @keyframes blink {
@@ -140,26 +207,17 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #00574E;
-    border-radius: 10px;
-    color: #FFFFFF;
-}
-
-#memory {
-    background-color: #00574E;
-    border-radius: 10px;
-}
-
 #network {
-    background-color: #00574E;
-    border-radius: 10px;
+    background-color: @backgroundcolor3;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 2px 2px 2px 2px;
+    padding: 0 8px;
     transition: all 0.2s ease-in-out;
 }
 
 #network:hover {
     background-color: #008A55;
-    border-radius: 10px;
+    padding: 0 12px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -167,66 +225,23 @@ label:focus {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-    background-color: #00574E;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-}
-
-#pulseaudio:hover {
-    background-color: #008A55;
-}
-
-#pulseaudio.muted {
-    background-color: #1d9b8e;
-    color: #333736;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #00574E;
-    border-radius: 10px;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
 #tray {
-    background-color: #00574E;
-    border-radius: 10px;
+    background: transparent;
+    margin: 0 0 0 10px;
 }
 
 #custom-power {
-    background-color: #00574E;
-    color: #FFFFFF;
-    border-radius: 10px;
+    margin: 2px 2px 2px 2px;
+    background: @backgroundcolor3;
+    color: @textcolor1;
+    padding: 0 3px;
+    border-radius: 25px;
+    margin: 2px 10px 2px 2px;
     transition: all 0.2s ease-in-out;
 }
 
 #custom-power:hover {
-    background-color: #ee7c3a;
-    color: #000000
+    background: transparent;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    min-width: 35px;
 }
