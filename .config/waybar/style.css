@@ -69,7 +69,6 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    border-radius: 5px;
 }
 
 /* you can set a style on hover for any module like this */
@@ -211,6 +210,7 @@ label:focus {
 
 #network {
     background: transparent;
+    color: @textcolor1;
     margin: 2px 2px 2px 2px;
     padding: 0 8px;
     transition: all 0.2s ease-in-out;

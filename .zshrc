@@ -62,3 +62,5 @@ alias vi='nvim'
 alias c='clear'
 alias neofetch='fastfetch --config arch'
 
+# Environmental Variables
+export QT_QPA_PLATFORMTHEME='qt6ct'
