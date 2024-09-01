@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S wl-clipboard swww grim slurp
+sudo pacman -S wl-clipboard swww grim slurp gtop
 
-yay -S htop
+yay -S waypaper
 

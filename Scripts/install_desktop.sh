@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# The release version had problems with it logging me out randomly so the git version is installed instead
-yay -S hyprland-git
+sudo pacman -S swww fuzzel swaync
 
-sudo pacman -S waybar swww fuzzel
+# This is required for the cava module to work as it is not included in the pacman version
+yay -S waybar-cava
+
+# Fonts
+sudo pacman -S ttf-fira-sans ttf-font-awesome
