@@ -17,11 +17,11 @@ local servers = {
             python = {
                 analysis = {
                     ignore = { '*' },
+                    typeCheckingMode = 'off',
                 }
             }
         }
-    },
-
+    }
 }
 
 local nvlsp = require "nvchad.configs.lspconfig"
