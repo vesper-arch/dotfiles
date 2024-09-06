@@ -52,7 +52,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "on-click": "none"
     },
     "custom/weekday": {
         "exec": "date +\"%A\" ",
@@ -60,7 +61,8 @@
     },
     "custom/date": {
         "exec": "$HOME/dotfiles/.config/waybar/scripts/date.sh",
-        "format": "{}"
+        "format": "{}",
+        "interval": 3600
     },
     "custom/notification": {
         "tooltip": false,

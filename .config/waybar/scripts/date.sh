@@ -9,8 +9,5 @@ DaySuffix() {
   esac
 }
 
-while true
-    do
-        DAY=$(echo $(date +"%d") | sed 's/^0*//')
-        echo `date +"%B $DAY$(DaySuffix)"`
-    done
+DAY=$(echo $(date +"%d") | sed 's/^0*//')
+echo `date +"%B $DAY$(DaySuffix)"`
