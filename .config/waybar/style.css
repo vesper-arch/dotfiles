@@ -132,6 +132,7 @@ button:hover {
 
 #cava {
     background-color: @backgroundcolor3;
+    font-family: "JetBrainsMono Nerd Font";
     margin: 2px 1px 2px 2px;
     border-radius: 18px 2px 2px 18px;
     color: @textcolor2;
