@@ -4,7 +4,7 @@
 @define-color workspacesactive #1FB8B0;
 @define-color workspaces #187A85;
 @define-color textcolor1 #FFFFFF;
-@define-color textcolor2 #034e52;
+@define-color textcolor2 #64e5d6;
 @define-color textcolor3 #000000;
 
 
@@ -58,24 +58,10 @@ window#waybar.chromium {
     border: none;
 }
 
-button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 5px;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-}
-
 /* you can set a style on hover for any module like this */
 
 #mode {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
 }
 
 #clock,
@@ -107,6 +93,10 @@ button:hover {
 #workspaces button.active {
     background-color: @workspacesactive;
     min-width: 30px;
+}
+
+#workspaces button.hover {
+    background-color: @workspacesactive;
 }
 
 #workspaces button.urgent {

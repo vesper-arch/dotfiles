@@ -1,0 +1,44 @@
+@define-color backgroundcolor1 #00574E;
+@define-color backgroundcolor2 #1c4661;
+@define-color backgroundcolor3 rgba(255, 255, 255, 0.225);
+@define-color workspacesactive #1FB8B0;
+@define-color workspaces #187A85;
+@define-color textcolor1 #FFFFFF;
+@define-color textcolor2 #64e5d6;
+@define-color textcolor3 #000000;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, sans-serif;
+    border: none;
+    min-height: 0px;
+}
+
+window#waybar {
+    background-color: rgba(39, 54, 53, 0.8);
+    border-radius: 0 0 5px 5px;
+}
+
+#window {
+    margin: 4px 2px 4px;
+    padding: 0 10px;
+}
+
+#workspaces {
+    margin-right: 1px;
+    margin-left: 3px;
+}
+
+#workspaces button {
+    color: @textcolor1;
+    background-color: @backgroundcolor1;
+    margin: 4px 2px 4px;
+    padding: 0 7px;
+}
+
+#window {
+    color: @textcolor1;
+    background-color: @backgroundcolor1;
+    border-radius: 4px;
+}
+

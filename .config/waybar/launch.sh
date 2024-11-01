@@ -7,4 +7,4 @@ if pgrep -l waybar; then
     killall waybar
 fi
 
-waybar &
+waybar -c "$HOME/dotfiles/.config/waybar/config.jsonc" -s "$HOME/dotfiles/.config/waybar/style.css"

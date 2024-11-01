@@ -5,10 +5,11 @@
 local M = {}
 
 M.base46 = {
-	theme = "poimandres",
+	theme = "jabuti",
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
+    transparency = true,
 }
 
 M.ui = {

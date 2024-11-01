@@ -64,3 +64,6 @@ alias neofetch='fastfetch --config arch'
 
 # Environmental Variables
 export QT_QPA_PLATFORMTHEME='qt6ct'
+
+# Created by `pipx` on 2024-10-23 20:58:18
+export PATH="$PATH:/home/vesper-arch/.local/bin"
