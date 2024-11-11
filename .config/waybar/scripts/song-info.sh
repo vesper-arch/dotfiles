@@ -1,23 +1,18 @@
 #!/bin/bash
 
-while true
-    do
-        case `playerctl status` in
+while true; do
+    case "$(playerctl status)" in
+        "Playing")
+            STATUS="  " ;;
+        "Paused")
+            STATUS="  " ;;
+        *)
+            STATUS="  " ;;
+    esac
 
-            "Playing")
-                STATUS="  "
-                ;;
-            "Paused")
-                STATUS="  "
-                ;;
-            *)
-                STATUS="  "
-                ;;
-        esac
+    TITLE="$(playerctl metadata title)"
+    ARTIST="$(playerctl metadata artist)"
 
-        TITLE=`playerctl metadata title`
-        ARTIST=`playerctl metadata artist`
-
-        echo "($STATUS) $TITLE - $ARTIST"
-        sleep 0.1
-    done
+    echo "($STATUS) $TITLE - $ARTIST"
+    sleep 0.1
+done

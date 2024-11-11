@@ -13,7 +13,7 @@
     font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, sans-serif;
     border: none;
     min-height: 0px;
-    
+    font-size: 13px;
 }
 
 window#waybar {
