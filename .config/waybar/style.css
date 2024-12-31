@@ -1,24 +1,25 @@
 @define-color backgroundcolor1 #00574E;
 @define-color backgroundcolor2 #1c4661;
-@define-color backgroundcolor3 rgba(255, 255, 255, 0.225);
+@define-color backgroundcolor3 rgba(0, 0, 0, 0.35);
 @define-color workspacesactive #1FB8B0;
 @define-color workspaces #187A85;
 @define-color textcolor1 #FFFFFF;
-@define-color textcolor2 #64e5d6;
+@define-color textcolor2 #21f98f;
 @define-color textcolor3 #000000;
 
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, sans-serif;
+    font-family: "Quicksand", "Font Awesome 6 Free", FontAwesome, Roboto, sans-serif;
+    font-weight: bolder;
     border: none;
     min-height: 0px;
     font-size: 13px;
 }
 
 window#waybar {
-    background-color: rgba(255, 255, 255, 0.125);
-    background: transparent;
+    background: linear-gradient(45deg, rgba(171, 111, 255, 0) 25%, rgba(97, 234, 236, 0.6) 50%, rgba(0, 255, 0, 0) 76%);
+    border-radius: 32px;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -97,6 +98,7 @@ window#waybar.chromium {
 
 #workspaces button.hover {
     background-color: @workspacesactive;
+    padding: 0 3px;
 }
 
 #workspaces button.urgent {
@@ -201,7 +203,7 @@ label:focus {
 
 #network {
     background: transparent;
-    color: @textcolor1;
+    color: @textcolor3;
     margin: 2px 2px 2px 2px;
     padding: 0 8px;
     transition: all 0.2s ease-in-out;
@@ -230,6 +232,7 @@ label:focus {
 }
 
 #custom-power {
+    font-size: 12px;
     margin: 2px 2px 2px 2px;
     background: @backgroundcolor3;
     color: @textcolor1;
@@ -240,7 +243,9 @@ label:focus {
 }
 
 #custom-power:hover {
-    background: transparent;
+    background: rgba(255, 0, 0, 0.2);
     border: 2px solid rgba(255, 0, 0, 0.5);
+    color: @textcolor3;
+    font-size: 14px;
     min-width: 35px;
 }

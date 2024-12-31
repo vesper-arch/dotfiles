@@ -63,7 +63,7 @@ alias c='clear'
 alias neofetch='fastfetch --config arch'
 
 # Environmental Variables
+export LD_LIBRARY_PATH='/usr/local/lib'
+export LD_LIBRARY_PATH='$LD_LIBRARY_PATH:/usr/lib/libspdlog.so.1'
 export QT_QPA_PLATFORMTHEME='qt6ct'
-
-# Created by `pipx` on 2024-10-23 20:58:18
 export PATH="$PATH:/home/vesper-arch/.local/bin"
