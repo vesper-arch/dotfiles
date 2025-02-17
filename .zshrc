@@ -67,3 +67,4 @@ export LD_LIBRARY_PATH='/usr/local/lib'
 export LD_LIBRARY_PATH='$LD_LIBRARY_PATH:/usr/lib/libspdlog.so.1'
 export QT_QPA_PLATFORMTHEME='qt6ct'
 export PATH="$PATH:/home/vesper-arch/.local/bin"
+export PATH="$PATH:/home/vesper-arch/.dotnet/tools"
